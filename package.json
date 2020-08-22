@@ -1,7 +1,7 @@
 {
   "name": "task-hub",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.3",
+  "description": "Task-hub help you run and manage your schedule running function",
   "main": "index.js",
   "dependencies": {
     "uuid": "^8.3.0"
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/mocmeo19/task-hub.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["task", "job", "schedule job", "schedule task", "forerver"],
+  "author": "mocmeo19",
   "license": "ISC"
 }

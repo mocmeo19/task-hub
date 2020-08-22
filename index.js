@@ -17,9 +17,6 @@ class TaskHub {
   get size () {
     return this.storage.size
   }
-  get debug () {
-    return this.opts.debug
-  }
 
   addTask(handler, config) {
     if (typeof handler !== 'function') throw Error('Task must be a function')

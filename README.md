@@ -1,8 +1,10 @@
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
-
-## What is
+# [task-hub](https://github.com/mocmeo19/task-hub)
 You know, task-hub help you run and manage your schedule running 
 function. 
+
+![NPM version](https://img.shields.io/npm/v/task-hub.svg)
+
+
 ## Installation
 
 ```bash
@@ -13,7 +15,9 @@ npm install task-hub
 ```javascript
 const TaskHub = require('task-hub')
 
-const taskHub = TaskHub.init()
+const taskHub = TaskHub.init({
+  timeInterval: 5000
+})
 const task = taskHub.addTask(function () {
   const { config } = this
   console.log(config.value)
@@ -22,6 +26,10 @@ const task = taskHub.addTask(function () {
 taskHub.start(task.id)
 ```
 ## API
+### TaskHub.init()
+Setup A Hub, this function will return the same instance even if you
+call multiple times.
+
 ### addTask(function, options)
 Add new task to hub
 - function: the task function
